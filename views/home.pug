@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style   
+        include ../static/style.css
+
+block content
+    
+    section#introSection
+        div Welcome to Ghost Karate Dojo 
+        div.small A way of life.
+
+    section#missionSection
+        h1 Our Mission
+        .card
+          h2 Fitness via combat
+            div.card-box
+              div.card-img
+                img(src="/static/m1.jpg")
+              .card-content 
+                p Karate is a traditional Japanese martial art that offers a full-body workout, incorporating strength, cardio, and flexibility training. It can improve endurance, balance, coordination, and overall fitness levels. Regular training in karate can also promote mental wellness, self-discipline, and stress relief.
+          
+        .card
+          h2 Self-Defense for all
+            div.card-box
+              div.card-img
+                img(src="/static/m2.jpg")
+              .card-content 
+                p Self defense training can empower individuals with the skills and confidence to protect themselves in potentially dangerous situations. It is important to find a reputable instructor and training program that emphasizes practical techniques and situational awareness.
+        .card
+          h2 Confidence in life
+            div.card-box
+              div.card-img
+                img(src="/static/m3.jpg")
+              .card-content 
+                p Karate training can instill a sense of discipline and focus, leading to increased self-confidence in daily life. The physical and mental challenges of karate practice can help individuals overcome self-doubt and develop a "can-do" attitude. 
+    
+    section#sponsorSection
+        h1 Our Sponsors
+        div#sponsors
+          img(src="/static/sp1.png", alt="Sponsor Image", class="spImage")
+          img(src="/static/sp2.png", alt="Sponsor Image", class="spImage")
+          img(src="/static/sp3.png", alt="Sponsor Image", class="spImage")
+          img(src="/static/sp4.png", alt="Sponsor Image", class="spImage")
